@@ -15,18 +15,19 @@
         Add <span class="highlight">accountability</span> to your Goals.
       </h2>
       <p>Team up and keep each other on track to crush your tasks together!</p>
-      <button class="cta-button">Download for Andriod</button>
+      <button class="cta-button" id="download-button">Download for Android</button>
     </div>
-<!-- Video Section -->
-<section class="video-section">
-  <div >
-    <h3 style="margin-top: 30px;">Watch How Accomplice Works</h3>
-    <video autoplay loop muted playsinline>
-      <source src="final.mov" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-</section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+      <div>
+        <h3 style="margin-top: 30px;">Watch How Accomplice Works</h3>
+        <video autoplay loop muted playsinline>
+          <source src="final.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
   </header>
 
   <!-- How It Works Section -->
@@ -35,17 +36,14 @@
       <h2>How <span class="highlight">Accomplice</span> works</h2>
       <div class="features">
         <div class="feature">
-         
           <h3>Add Friend</h3>
           <p>Pair up with your friend or another user who keeps you accountable.</p>
         </div>
         <div class="feature">
-         
           <h3>Get Notified</h3>
           <p>Schedule your task and get notified. Note: enable notifications in the settings.</p>
         </div>
         <div class="feature">
-       
           <h3>Keep each other on Track!</h3>
           <p>Verify each other's tasks by uploading photos of completion.</p>
         </div>
@@ -56,10 +54,8 @@
   <!-- Feedback Section -->
   <section class="feedback">
     <div class="container">
-      <h2>Enable Notification in settings</h2>
-      
-        <button type="submit">Download for Andriod</button>
-      
+      <h2>Enable Notification in Settings</h2>
+      <button class="cta-button" id="download-button-2">Download for Android</button>
     </div>
   </section>
 
@@ -70,6 +66,18 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    // Google Drive file direct download URL
+    const googleDriveFileUrl = "https://drive.google.com/uc?export=download&id=1zUGFfEIllrRZogpP2_HNp9JPMBGjJxPz";
+
+    // Add event listener to the download button
+    document.getElementById("download-button").addEventListener("click", function() {
+      window.location.href = googleDriveFileUrl; // Navigate to the Google Drive URL
+    });
+
+    document.getElementById("download-button-2").addEventListener("click", function() {
+      window.location.href = googleDriveFileUrl; // Navigate to the Google Drive URL
+    });
+  </script>
 </body>
 </html>
