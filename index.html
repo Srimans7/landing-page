@@ -67,16 +67,12 @@
   </footer>
 
   <script>
-    // Google Drive file direct download URL
-    const googleDriveFileUrl = "https://drive.google.com/uc?export=download&id=1zUGFfEIllrRZogpP2_HNp9JPMBGjJxPz";
+    const localFileUrl = "accomplice.apk";  // Ensure APK is in the same directory as this HTML file
 
-    // Add event listener to the download button
-    document.getElementById("download-button").addEventListener("click", function() {
-      window.location.href = googleDriveFileUrl; // Navigate to the Google Drive URL
-    });
-
-    document.getElementById("download-button-2").addEventListener("click", function() {
-      window.location.href = googleDriveFileUrl; // Navigate to the Google Drive URL
+    document.querySelectorAll("[id^='download-button']").forEach(button => {
+      button.addEventListener("click", function() {
+        window.location.href = localFileUrl;  // Trigger APK download
+      });
     });
   </script>
 </body>
